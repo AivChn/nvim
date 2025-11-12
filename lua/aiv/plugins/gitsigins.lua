@@ -14,7 +14,7 @@ return {
 			end, { desc = "Stage hunk" })
 			vim.keymap.set("v", "<leader>hr", function()
 				gs.reset_hunk({ vim.fn.line("."), vim.fn.line("v") })
-			end, { desc = { desc = "Reset hunk" } })
+			end, { desc = "Reset hunk" })
 
 			vim.keymap.set("n", "<leader>hS", gs.stage_buffer, { desc = "Stage buffer" })
 			vim.keymap.set("n", "<leader>hR", gs.reset_buffer, { desc = "Reset buffer" })
